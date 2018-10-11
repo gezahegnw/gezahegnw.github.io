@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>All About Me</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+ <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gezahegn Worku</a>
+             <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+           <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav navbar-nav navbar-right"> 
+              <li class="dropdown-menu"> 
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                <li><a class="nav-link" href="#about-page">About</a></li>
+                <li><a class="nav-link" href="#protfolio-page">Portfolio</a></li>
+                <li><a class="nav-link" href="#contact-info">Contact</a></li>    
+              </li>
+            </ul>
+        </div>
+    </nav>
+<div class="container">
+  <div class="jumbotron">
+    <div id="main-container" class="main-container"> <!--openning container div-->
+      <div id="main-section">
+        <a name="about-page"></a>
+        <h1>About Me!</h1>
+        <img id="bio-image" src="assets/images/myphoto.jpg" height="200" width="200" alt="Gezahegn Worku"/>
+        <p>
+          My Name is Gezahegn Worku. I am from Olathe KS. I am Junior Front-end Developer. Currently I am in coding bootcamp working on become Full Stuck Web Developer.
+          I am always very passionated  to learen and chanlenge myself to new technology and make it evry learning opportunities possible,
+        </p>
+      </div><!--closing container div-->
+    </div>
+<!---->
+  </div><!--closing jumbotron-->
+</div>
+
+<br>
+<br>
+
+<!-- MAIN (Center website) -->
+<div class="container-fluid">
+ <div class="main">
+  <a name="protfolio-page"></a>
+  <h2>PORTFOLIO</h2>
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <a href="https://djknit.github.io/Project-1/"><img  class="image" src="assets/images/projectone.jpg"  alt="Lights" style=" width:100%"/></a>
+        <h3>project One</h3>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <a href="https://gezahegnw.github.io/TriviaGame/"><img  class="image" src="assets/images/trivagame.PNG"   alt="Lights" style=" width:100%"/></a>
+        <h3>My Work</h3>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <a href="https://gezahegnw.github.io/Word-Guess-Game/"><img  class="image" src="assets/images/hangman-game.PNG"   alt="Lights" style=" width:100%"/></a>
+        <h3>My Work</h3>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <a href="https://gezahegnw.github.io/Train-Scheduler/"><img  class="image" src="assets/images/train-scheduler.PNG"   alt="Lights" style=" width:100%"/></a>
+        <h3>My Work</h3>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <a href="https://gezahegnw.github.io/GifTastic/"><img class="image" src="assets/images/giftastic.PNG"   alt="Lights" style=" width:100%"/></a>
+        <h3>My Work</h3> 
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  </div>
+  </div>
+<!--contact info-->
+  <div class="container">
+    <div  id="contact-container" class="contact-container">
+      <a name="contact-info"></a>
+      <h1>Contact Me</h1>
+          I'm Currently  Not available for work
+           <form id="contact-info">
+            <ul>
+              <li class="form-row">
+                <li class="col">
+                  <label for="first name">First Name</label>
+                  <input type="text" class="form-control" placeholder="First name">
+                </li>
+                <li class="col">
+                  <label for="last name">Last Name</label>
+                  <input type="text" class="form-control" placeholder="Last name">
+                </li>
+                <li class="col">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="enteryouremail@gmail.com" required="required">
+                </li>
+                <li class="col">
+                  <label for="textarea">Example textarea</label>
+                  <textarea type="textarea" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </li>
+                <li class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </li>
+            </li>
+            </ul>
+          </form>
+          <p>My Conatct Email: gezahegnw@gmail.ocm</p>
+    </div>
+</div>
+<br>
+<br>
+  <footer>
+    <div id="footer">
+      Copyright &#169;.
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("button").click( function(){
+    //  alert("clicked");
+
+      $(".jumbotron-fluid").toggle();
+  });
+  });
+  </script>
+</body>
+</html>
