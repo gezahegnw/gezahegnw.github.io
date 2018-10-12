@@ -23,7 +23,7 @@
                   <li class="nav-item active">
                       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
-                <li><a class="nav-link" href="#about-page">About</a></li>
+                <li><a class="nav-link" href="index.html">About</a></li>
                 <li><a class="nav-link" href="#protfolio-page">Portfolio</a></li>
                 <li><a class="nav-link" href="#contact-info">Contact</a></li>    
               </li>
@@ -49,9 +49,8 @@
 
 <br>
 <br>
-
 <!-- MAIN (Center website) -->
-<div class="container-fluid">
+<div class="container">
  <div class="main">
   <a name="protfolio-page"></a>
   <h2>PORTFOLIO</h2>
@@ -60,31 +59,31 @@
     <div class="column">
       <div class="content">
         <a href="https://djknit.github.io/Project-1/"><img  class="image" src="assets/images/projectone.jpg"  alt="Lights" style=" width:100%"/></a>
-        <h3>project One</h3>
+        <a href="https://djknit.github.io/Project-1/">project One</a>
       </div>
     </div>
     <div class="column">
       <div class="content">
-        <a href="https://gezahegnw.github.io/TriviaGame/"><img  class="image" src="assets/images/trivagame.PNG"   alt="Lights" style=" width:100%"/></a>
-        <h3>My Work</h3>
+        <a href="https://gezahegnw.github.io/TriviaGame/"><img  class="image" src="assets/images/trivagame.PNG"   alt="Lights" style=" width:100%"/></a> 
+        <a href="https://gezahegnw.github.io/TriviaGame/">Trivia Game</a>
       </div>
     </div>
     <div class="column">
       <div class="content">
         <a href="https://gezahegnw.github.io/Word-Guess-Game/"><img  class="image" src="assets/images/hangman-game.PNG"   alt="Lights" style=" width:100%"/></a>
-        <h3>My Work</h3>
+        <a href="https://gezahegnw.github.io/Word-Guess-Game/">Word Guess Game</a>
       </div>
     </div>
     <div class="column">
       <div class="content">
         <a href="https://gezahegnw.github.io/Train-Scheduler/"><img  class="image" src="assets/images/train-scheduler.PNG"   alt="Lights" style=" width:100%"/></a>
-        <h3>My Work</h3>
+        <a href="https://gezahegnw.github.io/Train-Scheduler/">Train-Scheduler</a>
       </div>
     </div>
     <div class="column">
       <div class="content">
         <a href="https://gezahegnw.github.io/GifTastic/"><img class="image" src="assets/images/giftastic.PNG"   alt="Lights" style=" width:100%"/></a>
-        <h3>My Work</h3> 
+        <a href=" https://gezahegnw.github.io/GifTastic/">GifTastic</a> 
       </div>
     </div>
   <!-- END GRID -->
@@ -101,19 +100,19 @@
             <ul>
               <li class="form-row">
                 <li class="col">
-                  <label for="first name">First Name</label>
+                  <label for="first name">First Name:</label>
                   <input type="text" class="form-control" placeholder="First name">
                 </li>
                 <li class="col">
-                  <label for="last name">Last Name</label>
+                  <label for="last name">Last Name:</label>
                   <input type="text" class="form-control" placeholder="Last name">
                 </li>
                 <li class="col">
-                  <label for="email">Email</label>
+                  <label for="email">Email:</label>
                   <input type="email" id="email" name="email" placeholder="enteryouremail@gmail.com" required="required">
                 </li>
                 <li class="col">
-                  <label for="textarea">Example textarea</label>
+                  <label for="textarea">Message:</label>
                   <textarea type="textarea" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </li>
                 <li class="col-auto">
@@ -129,7 +128,7 @@
 <br>
   <footer>
     <div id="footer">
-      Copyright &#169;.
+      Created by Gezahegn Worku &#169;.
     </div>
   </footer>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -139,9 +138,9 @@
   <script>
   $(document).ready(function(){
     $("button").click( function(){
-    //  alert("clicked");
+    // alert("clicked");
 
-      $(".jumbotron-fluid").toggle();
+      $(".jumbotron").toggle();
   });
   });
   </script>
