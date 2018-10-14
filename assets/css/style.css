@@ -13,11 +13,13 @@
   .jumbotron{
     background-color: rgb(43, 63, 63) !important;
     padding-bottom: 20px;
+    margin-top: 100px;
   }
+  /*
   .thumbnail{
-    background-color: rgb(245, 209, 207);
+    background-color: rgb(197, 41, 33);
   }
- 
+ */
   h1,
   h2,
   a,
@@ -27,30 +29,38 @@
    a:link{
     text-decoration: none;
   }
+  /*
   a :hover{
     background-color: red;
-  }
+  } */
   h1,
   h2,
-  h3,
-  a {
-    font-family: Georgia, Times, "Times New Roman", serif;
+  h3
+   {
     font-weight: 700;
     color: #4aaaa5;
   }
-  
+    P{
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      text-justify: auto;
+      font-size: 20px;
+    }
   h1 {
     padding-bottom: 10px;
     line-height: 49px;
    /* border-bottom: 3px solid #ddd;*/
   }
   
-  h2,
-  a {
+  h2{
     font-size: 22px;
   }
   
-  
+  a{
+    font-size: 18px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  }
   #logo {
     float: left;
     width: 250px;
@@ -65,13 +75,13 @@
     background: #4aaaa5;
   }
 
-  nav {
+ /* nav {
     float: right;
    padding-top: 20px; 
 
   } 
   
-  nav a {
+ /* nav a {
     display: inline-block;
     padding-left: 15px;
     margin-left: 15px;
@@ -79,9 +89,11 @@
     color: #999;
     text-decoration: none;
     border-left: 1px solid #efefef;
-  }
+  } */
   nav a:first-child {
     border-left: 0 none;
+    font-size: 30px;
+    margin-right: 20px;
   }
   
   /* footer */
@@ -102,6 +114,7 @@
     bottom: 0;
    
   }
+  
  .navbar{
    padding: 0;
    margin: 0;
@@ -188,13 +201,15 @@ h1 {
   height: 300px;
   height: 300px;
 }
+
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
   width: 33%;
-
 }
-
+.column  :hover{
+  background-color: yellowgreen;
+}
 /* Clear floats after rows */ 
 .row:after {
   content: "";
@@ -209,37 +224,123 @@ h1 {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+ 
+  
+@media (min-width: 1200px) { 
   .column {
-      width: 50%;
-  }
-  .navbar-header a {
-    font-size: 10px;
-  }    
-  .navbar-brand {
-    padding-right: 0;
-    font-size: 16px;
-  }
-  h1, h2, h3{
-    text-align: center;
-    font-size: 20px;
+    width: 33%;
+}
+/*
+.navbar-header a {
+  font-size: 18px;
+}    
+.navbar-brand {
+  padding-right: 0;
+  font-size: 24px;
+} */
+ }
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .column {
+    width: 50%;
+}
+/*
+.navbar-header a {
+  font-size: 10px;
+}    
+.navbar-brand {
+  padding-right: 0;
+  font-size: 24px;
+} */
+nav a:first-child {
+  font-size: 24px;
+}
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .column {
+    width: 50%;
+}
+/*
+.navbar-header a {
+  font-size: 18px;
+}  
 
-  }
+.navbar-brand {
+ padding-right: 0;
+ font-size: 24px;
+}
+*/
+.jumbotron{
+padding-top: 20px;
+}
+label,
+input[type=text],
+input[type=email],
+textarea[type=textarea] {
+display: block;
+width: 100%;
+}
+nav a:first-child {
+  font-size: 20px;
+}
+ } 
+  
+ @media (min-width: 576px) and (max-width: 767.98px)  {  
+    .column {
+  width: 100%;
+}
+/*
+.navbar-header a {
+font-size: 14px;
+}  
+
+.navbar-brand {
+padding-right: 0;
+font-size: 16px;
+}
+*/
+#bio-image {
+width: 100%;
+}
+label,
+input[type=text],
+input[type=email],
+textarea[type=textarea] {
+display: block;
+width: 100%;
+}
+h1, h2, h3{
+text-align: center;
+font-size: 24px;
+
+}
+nav a:first-child {
+  font-size: 18px;
 }
 
+.jumbotron{
+padding-top: 20px;
+margin-top: 120px;
+}
+/*
+.navbar-header{
+padding-right: 50px;
+}
+*/
+} 
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+ @media screen and (max-width: 575.98px) {
   .column {
       width: 100%;
   }
-  .navbar-header a {
-    font-size: 10px;
+ /*a .navbar-header {
+    font-size: 18px;
   }  
  
   .navbar-brand {
    padding-right: 0;
-   font-size: 16px;
- }
+   font-size: 100px;
+ } */
  #bio-image {
   width: 100%;
 }
@@ -259,14 +360,11 @@ label,
 
 .jumbotron{
   padding-top: 20px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
-.navbar-header{
-  padding-right: 50px;
-}
-.btn-lg {
-   font-size: 40px;
+nav a:first-child {
+  font-size: 18px;
 }
 }
 
