@@ -1,138 +1,190 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>All About Me</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/reset.css">
- <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+	<title>My Portfolio Page</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+	<!-- Custom styles for this template -->
+	<link href="assets/css/main.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/hover.zoom.js"></script>
+	<script src="assets/js/hover.zoom.conf.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Gezahegn Worku</a>
-             <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-           <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="nav navbar-nav navbar-right"> 
-              <li class="dropdown-menu"> 
-                    <li><a class="nav-link" href="index.html">About</a></li>
-                    <li><a class="nav-link" href="#contact-info">Contact</a></li>
-                    <li><a class="nav-link" href="#protfolio-page">Portfolio</a></li>
-                    <li><a href="https://github.com/gezahegnw"><i class="fa fa-github" aria-hidden="true" style="font-size:38px;color:white"></i></a></li>
-              <li><a class="nav-link" href="https://linkedin.com/in/gezahegn-worku-aug1982"><i class="fa fa-linkedin-square" style="font-size:38px;color:white"></i> 
-              </a></li>   
-              </li>
-            </ul>
-        </div>
-    </nav>
-<div class="container">
-  <div class="jumbotron">
-    <div id="main-container" class="main-container"> <!--openning container div-->
-      <div id="main-section">
-        <a name="about-page"></a>
-        <h1>About Me!</h1>
-        <img id="bio-image" src="assets/images/myphoto.jpg" height="200" width="200" alt="Gezahegn Worku"/>
-        <p>
-          My Name is Gezahegn Worku. I am from Olathe KS. 
-          I am Junior Front-end Developer. Currently, I am in coding Boot Camp School working on to become Full Stack Web Developer. 
-          I have always been very interested and passionate About Technologies, therefore, especially website. 
-          Learning and challenging myself to new technologies is always been my best talent.  
-          If is there any Learning opportunities, I would go ahead and take that opportunity and use it as much as I can. Currently, I am Working at the Clinical Reference Laboratory. 
-          I have been working for this company  over 4 years now and I am Sample Processing Clerk in Toxicology Department. I really enjoy working with my team and I have learned so much.  
-        </p>    
-        </div><!--closing container div-->
-    </div>
-<!---->
-  </div><!--closing jumbotron-->
-</div>
+
+	<!-- Static navbar -->
+	<a name="home"></a>
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Gezahegn Worku</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#protfolio-page">Portfolio</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="project.html">Project Page</a></li>
+					<li><a href="#contact-info">Contact</a></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+
+	<!-- +++++ Welcome Section +++++ -->
+	<div id="ww">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 centered">
+					<img id="bio-image" src="assets/img/myphoto.jpg" height="200" width="200" alt="imageGezahegn image" />
+					<h1>Hello, I am Gezahegn Worku!</h1>
+					<p>
+						My Name is Gezahegn Worku. I am from Olathe KS.
+						I am Junior Full Stack Web Developer.
+						I have always been very interested and passionate About Technologies. Especially website Technologies.
+						Learning and challenging myself to new technologies is always been my best talent.
+						If is there any Learning opportunities, I would go ahead and take that opportunity and use it as much as I can.
+
+					</p>
+				</div><!-- /col-lg-8 -->
+			</div><!-- /row -->
+		</div> <!-- /container -->
+	</div><!-- /ww -->
 
 
+	<!-- +++++ Projects Section +++++ -->
+	<a name="protfolio-page"></a>
+	<div class="container pt">
+		<h1>PORTFOLIO</h1>
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<a class="zoom green" href="project.html"><img class="img-responsive" src="assets/img/portfolio/projectone.jpg" alt="image" /></a>
+				<p>Project One</p>
+				<a href="https://gezahegnw.github.io/project-one/">Project-1 Link to the deployed version.</a><br>
+				<a href="https://github.com/gezahegnw/project-one">Link to the code on GitHub.</a>
+			</div>
+			<div class="col-lg-4">
+				<a class="zoom green" href="project.html"><img class="img-responsive" src="assets/img/portfolio/hangman-game.PNG"
+					 alt="image" /></a>
+				<p>Hangman Game</p>
+				<a href="https://gezahegnw.github.io/Word-Guess-Game/">Word Guess Game Deployed version Link.</a><br>
+				<a href="https://github.com/gezahegnw/Word-Guess-Game">Link to the code on GitHub.</a>
+			</div>
+			<div class="col-lg-4">
+				<a class="zoom green" href="project.html"><img class="img-responsive" src="assets/img/portfolio/gifstasic.PNG" alt="image" /></a>
+				<p>Giftastic</p>
+				<a href=" https://gezahegnw.github.io/GifTastic/">GifTastic Deployed version Link.</a> <br>
+				<a href="https://github.com/gezahegnw/GifTastic">Link to the code on GitHub.</a>
+			</div>
+		</div><!-- /row -->
+		<div class="col-lg-4">
+			<a class="zoom green" href="project.html"><img class="img-responsive" src="assets/img/portfolio/train-scheduler.PNG"
+				 alt="image" /></a>
+			<p>Train Scheduler</p>
+			<a href="https://gezahegnw.github.io/Train-Scheduler/">Train-Scheduler Deployed version Link.</a><br>
+			<a href="https://github.com/gezahegnw/Train-Scheduler">Link to the code on GitHub.</a><br />
+		</div>
+		<div class="col-lg-4">
+			<a class="zoom green" href="project.html"><img class="img-responsive" src="assets/img/portfolio/trivagame.PNG" alt="image" /></a>
+			<p>Triva Game</p>
+			<a href="https://gezahegnw.github.io/TriviaGame/">Trivia Game Deployed version Link.</a><br>
+			<a href="https://github.com/gezahegnw/TriviaGame">Link to the code on GitHu.b.</a>
+		</div>
 
-<!-- MAIN (Center website) -->
-<div class="container">
- <div class="main">
-  <a name="protfolio-page"></a>
-  <h1>PORTFOLIO</h1>
-  <!-- Portfolio Gallery Grid -->
-  <div class="row">
-    <div class="column">
-      <div class="content">
-        <a href="https://djknit.github.io/Project-1/"><img  class="image" src="assets/images/projectone.jpg"  alt="Lights" style=" width:100%"/></a>
-        <a href="https://djknit.github.io/Project-1/">Project-1 Link to the deployed version.</a><br>
-        <a href="https://github.com/djknit/Project-1">Link to the code on GitHub.</a>
-      </div>
-    </div>
-    <div class="column">
-      <div class="content">
-        <a href="https://gezahegnw.github.io/TriviaGame/"><img  class="image" src="assets/images/trivagame.PNG"   alt="Lights" style=" width:100%"/></a> 
-        <a href="https://gezahegnw.github.io/TriviaGame/">Trivia Game Deployed version Link.</a><br>
-        <a href="https://github.com/gezahegnw/TriviaGame">Link to the code on GitHu.b.</a>
-      </div>
-    </div>
-    <div class="column">
-      <div class="content">
-        <a href="https://gezahegnw.github.io/Word-Guess-Game/"><img  class="image" src="assets/images/hangman-game.PNG"   alt="Lights" style=" width:100%"/></a>
-        <a href="https://gezahegnw.github.io/Word-Guess-Game/">Word Guess Game Deployed version Link.</a><br>
-        <a href="https://github.com/gezahegnw/Word-Guess-Game">Link to the code on GitHub.</a>
-      </div>
-    </div>
-    <div class="column">
-      <div class="content">
-        <a href="https://gezahegnw.github.io/Train-Scheduler/"><img  class="image" src="assets/images/train-scheduler.PNG"   alt="Lights" style=" width:100%"/></a>
-        <a href="https://gezahegnw.github.io/Train-Scheduler/">Train-Scheduler Deployed version Link.</a><br>
-        <a href="https://github.com/gezahegnw/Train-Scheduler">Link to the code on GitHub.</a>
-      </div>
-    </div>
-    <div class="column">
-      <div class="content">
-        <a href="https://gezahegnw.github.io/GifTastic/"><img class="image" src="assets/images/giftastic.PNG"   alt="Lights" style=" width:100%"/></a>
-        <a href=" https://gezahegnw.github.io/GifTastic/">GifTastic Deployed version Link.</a> <br>
-        <a href="https://github.com/gezahegnw/GifTastic">Link to the code on GitHub.</a>
-      </div>
-    </div>
-  <!-- END GRID -->
-  </div>
-  </div>
-  </div>
-<!--contact info-->
-  <div class="container">
-    <div  id="contact-container" class="contact-container">
-      <a name="contact-info"></a>
-      <h1>Contact Me</h1>
-          <h3>First Name: Gezahegn.</h3>
-          <h3>Last Name: Worku</h3>
-          <h3>My Conatct Email: gezahegnw@gmail.com</h3>
+		<div class="col-lg-4">
+			<a class="zoom green" href="project.html"><img class="img-responsive" src="assets/img/portfolio/project-two.PNG" alt="image" /></a>
+			<p>Project Two</p>
+			<a href="https://fathomless-eyrie-21415.herokuapp.com/">Virtual Elephanet heroku Deployed Link.</a><br>
+			<a href="https://github.com/gezahegnw/project-two">Link to the code on GitHu.</a>
+		</div>
+		<div class="col-lg-4">
+			<a class="zoom green" href="project.html"><img class="img-responsive" src="assets/img/portfolio/burger.PNG" alt="image" /></a>
+			<p>Eat Da Burger</p>
+			<a href="https://fierce-ocean-96074.herokuapp.com/">Heroku Deployed version Link.</a><br>
+			<a href="https://github.com/gezahegnw/burger">Link to the code on GitHu.b.</a>
+		</div>
+		<div class="col-lg-4">
+			<a class="zoom green" href="project.html"><img class="img-responsive" src="assets/img/portfolio/friend-finder.PNG"
+				 alt="image" /></a>
+			<p>Friend Finder</p>
+			<a href="https://gentle-wildwood-13027.herokuapp.com/">Heroku Deployed version Link.</a><br>
+			<a href="https://github.com/gezahegnw/friend-finder">Link to the code on GitHu.b.</a>
+		</div>
+	</div><!-- /row -->
+	</div><!-- /container -->
 
-          <h3>I'm Currently  Not available for work.</h3>
-          
-    </div>
-</div>
-<br>
-<br>
-  <footer>
-    <div id="footer">
-      Created by Gezahegn Worku &#169;.
-    </div>
-  </footer>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- Bootstrap CDN -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    $("button").click( function(){
-    // alert("clicked");
+	<!-- +++++ Footer Section +++++ -->
 
-      $(".jumbotron").toggle();
-  });
-  });
-  </script>
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<a name="contact-info"></a>
+					<h4>My Contact Info</h4>
+					<p>
+						Name:<br />
+						Gezahegn Worku.<br /><br />
+						Phone Number:<br />
+						<i class="fa fa-mobile fa-4x" aria-hidden="true"></i> (913)-215-3650.<br /><br />
+						E-mail Address: <br />
+						<i class="fa fa-envelope fa-2x" aria-hidden="true"></i> gezahegnw@gmail.com<br />
+						<i class="fa fa-envelope fa-2x" aria-hidden="true"></i> gezahegnw@yahoo.com.
+					</p>
+				</div><!-- /col-lg-4 -->
+
+				<div class="col-lg-4">
+					<h4>My Links</h4>
+					<p>
+						<a href="https://github.com/gezahegnw"><i class="fa fa-github" aria-hidden="true" style="font-size:38px;color:white"></i></a><br>
+						<a class="nav-link" href="https://linkedin.com/in/gezahegn-worku-aug1982"><i class="fa fa-linkedin-square" style="font-size:38px;color:white"></i></a><br />
+						<a href="index.html"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a><br />
+						<a href="resume.pdf"><i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i> Resume</a>
+					</p>
+				</div><!-- /col-lg-4 -->
+				<a name="about"></a>
+				<div class="col-lg-4">
+					<h4>About Me</h4>
+					<p> My name is Gezahegn Worku. I am from Olathe KS. I created this portfolio page to showcase my work in that i
+						have done while i was in KU Coding Bootcamp.</p>
+				</div><!-- /col-lg-4 -->
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>
