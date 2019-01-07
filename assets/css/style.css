@@ -32,7 +32,7 @@ p {
     line-height: 28px;
     margin-bottom: 25px;
     font-size: 16px;
-    color: #3d3c3c;
+    color: #2b95be;
     font-weight: bold;
 }
 
@@ -90,7 +90,7 @@ a:after {
 }
 
 .navbar-inverse {
-	background-color: #3b504b;
+	background-color: #16a085;
 	border-color: #16a085;
 }
 
@@ -139,7 +139,7 @@ a:after {
 #ww {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background-color: #cfbebe;
+	background-color: #e0f2f5;
 }
 
 
@@ -176,7 +176,7 @@ a:after {
 
 
 
-/* Blog Date*/
+/* Blog Date*//*
 bd {
 	font-size: 12px;
 	text-transform: uppercase;
@@ -184,19 +184,19 @@ bd {
 	font-weight: 700;
 }
 
-/* Blog Author*/
+/* Blog Author*//*
 ba {
 	font-size: 12px;
 	text-transform: uppercase;
 }
 
-/* Blog Quote */
+/* Blog Quote *//*
 .bq {
 	font-size: 22px;
 	padding-top: 30px;
 }
 
-/* Blog Tags */
+/* Blog Tags *//*
 bt {
 	font-size: 12px;
 }
@@ -232,4 +232,7 @@ bt {
 .glyphicon {
 	font-size: 40px;
 	color: #1abc9c;
+}
+h1, h3{
+    color: #043058 !important;
 }
