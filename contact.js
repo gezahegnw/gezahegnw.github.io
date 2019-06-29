@@ -1,6 +1,6 @@
 
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
+  // // Your web app's Firebase configuration
+  const firebaseConfig = {
     apiKey: "AIzaSyDDZjA6tcLOfNEXAsP7OL5lB2is-WuRrpo",
     authDomain: "contact-form-6e1d6.firebaseapp.com",
     databaseURL: "https://contact-form-6e1d6.firebaseio.com",
@@ -9,41 +9,45 @@
     messagingSenderId: "881549552794",
     appId: "1:881549552794:web:8e1e86aad10e66e3"
   };
-  // Initialize Firebase
+  // this will Initialize the Firebase
   firebase.initializeApp(firebaseConfig);
 
-//firebase.initializeApp(config);
 
-// Reference messages collection
-var messagesRef = firebase.database().ref('messages');
+// this is Reference messages collection
+const messagesRef = firebase.database().ref('messages');
 
-// Listen for form submit
+//this will  Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-// Submit form
+//this will  Submit the form
 function submitForm(e){
   e.preventDefault();
 
   // Get values
-  var name = getInputVal('name');
-  var company = getInputVal('company');
-  var email = getInputVal('email');
-  var phone = getInputVal('phone');
-  var message = getInputVal('message');
+  const name = getInputVal('name');
+  const company = getInputVal('company');
+  const email = getInputVal('email');
+  const phone = getInputVal('phone');
+  const message = getInputVal('message');
   console.log(name);
+  console.log(company);
+  console.log(email);
+  console.log(phone);
+  console.log(message);
 
-  // Save message
+
+  //this will  Save the message
   saveMessage(name, company, email, phone, message);
 
-  // Show alert
+  //this will  Show alert message
   document.querySelector('.alert').style.display = 'block';
 
-  // Hide alert after 3 seconds
+  //this will  Hide alert popup dialog box after 3 seconds
   setTimeout(function(){
     document.querySelector('.alert').style.display = 'none';
   },3000);
 
-  // Clear form
+  //this will  Clear the form
   document.getElementById('contactForm').reset();
 }
 
@@ -54,7 +58,7 @@ function getInputVal(id){
 
 // Save message to firebase
 function saveMessage(name, company, email, phone, message){
-  var newMessageRef = messagesRef.push();
+  const newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
     company:company,
@@ -63,3 +67,24 @@ function saveMessage(name, company, email, phone, message){
     message:message
   });
 }
+//==================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -29,7 +29,7 @@
   }
   
   .brand span{
-    color:#fff;
+    color:rgb(245, 112, 112);
   }
   
   .wrapper{
@@ -41,7 +41,7 @@
   }
   
   .company-info{
-    background:#c9e6ff;
+    background:#8fe6e9;
   }
   
   .company-info h3, .company-info ul{
@@ -50,9 +50,11 @@
   }
   
   .contact{
-    background:#f9feff;
+    background:#585a5a;
   }
-  
+  .contact form label, h2, h3 {
+    color: whitesmoke
+  }
   /* FORM STYLES */
   .contact form{
     display: grid;
