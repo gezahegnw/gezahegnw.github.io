@@ -16,7 +16,7 @@ body {
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     color: rgb(70, 204, 164);
 }
 
@@ -86,13 +86,13 @@ a:after {
 }
 
 .navbar-inverse {
-	padding-bottom: 70px;
-	padding-top: 70px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 }
 
 .navbar-inverse {
 	background-color: #16a085;
-	border-color: #16a085;
+	border-color: #545756;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -105,7 +105,7 @@ a:after {
 
 .navbar-brand {
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 15px;
 	letter-spacing: 2px;
 }
 
@@ -179,33 +179,7 @@ a:after {
 
 
 
-/* Blog Date*//*
-bd {
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #d2d2d2;
-	font-weight: 700;
-}
 
-/* Blog Author*//*
-ba {
-	font-size: 12px;
-	text-transform: uppercase;
-}
-
-/* Blog Quote *//*
-.bq {
-	font-size: 22px;
-	padding-top: 30px;
-}
-
-/* Blog Tags *//*
-bt {
-	font-size: 12px;
-}
-
-/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
-/* Effects also are controled by hover.zoom.js */
 .zoom { 
     display:block; 
     position:relative; 
@@ -221,7 +195,7 @@ bt {
         top:0; left:0;
         bottom:0; right:0;
         display:none;
-        background-image:url(../img/zoom.png);
+        background-color: greenyellow;
         background-repeat:no-repeat;
         background-position:center;
     }
@@ -233,10 +207,23 @@ bt {
 /* glyphicon Configuration */
 
 .glyphicon {
-	font-size: 40px;
+	font-size: 20px;
 	color: #1abc9c;
 }
 .img-responsive {
     display: flex;
     width: 100%;
   }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(80, 77, 77);
+    color: white;
+    padding-top: 15px;
+    text-align: center;
+ }
+ p#about {
+     padding: 20px;
+ }
