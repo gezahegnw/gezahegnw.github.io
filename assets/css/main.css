@@ -40,7 +40,7 @@ ol,ul, a {
 }
 a:link {
 	text-decoration: none !important;
-	margin-left: 40%;
+	/* margin-left: 35%; */
   }
 caption,th {
 	text-align:left;
@@ -448,5 +448,18 @@ a{
 	.slideshow li div h3 { font-size: 100px }
 }
 @media screen and (max-width: 600px) { 
-	.slideshow li div h3 { font-size: 50px }
+	.slideshow li div h3 { font-size: 24px }
+
 }
+@media screen and (max-width: 456px)  {
+	 h1 a:link {
+		font-size: 16px !important;
+}
+
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	body {
+		font-size: 16px;
+	}
+	}
