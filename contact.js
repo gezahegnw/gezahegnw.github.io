@@ -40,11 +40,11 @@ function submitForm(e){
   saveMessage(name, company, email, phone, message);
 
   //this will  Show alert message
-  document.querySelector('.alert').style.display = 'block';
+  document.getElementById('alert').style.display = 'block';
 
   //this will  Hide alert popup dialog box after 3 seconds
   setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
+    document.getElementById('alert').style.display = 'none';
   },3000);
 
   //this will  Clear the form
