@@ -8,8 +8,8 @@ html,body {
 	padding:0;
 }
 body {
-	background-image: url("/assets/img/main-page.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
+	/* background-image: url("/assets/img/main-page.jpg");  */
+  background:  linear-gradient(0.25turn, #c5c8ce, #ebf8e1, #f1c391); /* Used if the image is unavailable */
   height: auto; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -65,7 +65,7 @@ span {
   h2 {
 	  text-align: center;
 	  text-decoration: underline;
-	  color: white;
+	  color: rgb(77, 155, 245);
 	  margin-bottom: 20px;
   }
   #contact {
@@ -78,7 +78,6 @@ span {
   #about-me {
 	max-width: 90%; 
 	margin: auto;
-	 margin-top: 100px;
 	 border-radius: 15px;
   }
   .card:hover {
