@@ -8,8 +8,8 @@ html,body {
 	padding:0;
 }
 body {
-	background-image: url("/assets/img/landing-page.jpg"); /* The image used */
-  background-color: #696666; /* Used if the image is unavailable */
+	background-color: rgb(27, 23, 23);
+  height: 300px;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -20,10 +20,10 @@ body {
 	margin-top: 25%;
 }
 h5 {
-	color: whitesmoke;
+	color: white;
 }
 a {
-	color: whitesmoke;
+	color: white;
 	text-decoration: none;
 }
 a:hover {
