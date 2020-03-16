@@ -313,6 +313,39 @@
   <h2>CONTACT ME</h2>
   <div class="container" class="contact" id="contact">
     <div id="alert">Your message has been sent</div>
+  <form name="contact" method="POST" data-netlify="true">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Name</label>
+          <input type="text" class="form-control" name='name' id="name" required
+            placeholder="Please enter your first and last name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Company</label>
+          <input type="text" name='company' class="form-control" id="company"
+            placeholder="Please enter your company name">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email Address</label>
+          <input type="email" name='email' class="form-control" id="email" required
+            placeholder="Please enter your email address">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Phone Number</label>
+          <input type="text" name='phone' class="form-control" id="phone" placeholder="Please enter your phone number">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea class="form-control" name='message' id="message" rows="5"
+          placeholder="please enter your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form> 
+
+
     <!-- <form id="contactForm" method="POST" data-netlify="true">
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -344,29 +377,30 @@
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form> -->
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
+
+    <!-- <form name="contact" method="POST" data-netlify="true">
+      <div>
         <label>Your Name: <input type="text" name="name" /></label>   
-      </p>
-      <p>
+      </div>
+      <div>
         <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
+      </div>
+      <div>
         <label>Your Phone Number: <input type="text" name="phone" /></label>
-      </p>
-      <p>
+      </div>
+      <div>
         <label>Your Company Name: <input type="text" name="company" /></label>
-      </p>
-      <p>
+      </div>
+      <div>
         <label>Your Role: <input type='text' name='role' /></label>
-      </p>
-      <p>
+      </div>
+      <div>
         <label>Message: <textarea name="message" row='3'></textarea></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form> -->
   </div>
   <br />
   <br />
