@@ -85,3 +85,9 @@ background-color: rgb(80, 82, 82);
 opacity: 0.7;
 color: white;
   }
+
+  #date {
+    color: #82a9f7;
+    font-size: 24px;
+    font-weight: 900;
+  }
